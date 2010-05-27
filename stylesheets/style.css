@@ -1,0 +1,31 @@
+#chars {
+	width: 1220px;
+}
+
+div.char {
+	background: url(../images/fond.png) no-repeat;
+	float:left;
+	height: 146px;
+	margin: 2px;
+	width: 148px;
+}
+
+div.char div.char-name {
+	padding-top:5px;
+	text-align:center;
+}
+
+div.char div.char-avatar {
+	border-bottom: 1px solid #F3F3F3;
+	border-left: 1px solid #D7D7D7;
+	border-right: 1px solid #F3F3F3;
+	border-top: 1px solid #D7D7D7;
+	height: 110px;
+	margin: 0px 10px;
+}
+
+div.char div.char-avatar img{
+	border:none;
+	margin-left:-35px;
+	margin-top:-35px;	
+}
