@@ -16,11 +16,6 @@ Install
 Go the the directory include and rename the file config.php.example to config.php
 Fill the information for database connection in the config.php file
 
-Thanks to:
-------------------------------------------------------------------------------------
-http://acro.fr for letting me use their server to test the script
-http://ro-character-simulator.ratemyserver.net/ for their character simulator
-
 
 Français
 ====================================================================================
