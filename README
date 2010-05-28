@@ -1,0 +1,43 @@
+English
+====================================================================================
+Who's Online Ajax for Eathena written with PHP
+
+What is it?
+------------------------------------------------------------------------------------
+It's just a simple whosonline with Ajax to let people know who is connected.
+
+How it works?
+------------------------------------------------------------------------------------
+It pings the servers every 5 secondes and add or removes character from the web
+page.
+
+Install
+------------------------------------------------------------------------------------
+Go the the directory include and rename the file config.php.example to config.php
+Fill the information for database connection in the config.php file
+
+Thanks to:
+------------------------------------------------------------------------------------
+http://acro.fr for letting me use their server to test the script
+http://ro-character-simulator.ratemyserver.net/ for their character simulator
+
+
+Français
+====================================================================================
+Who's online en ajax pour Eathena écrit en PHP
+
+Qu'est ce que c'est ?
+------------------------------------------------------------------------------------
+C'est un simple whosonline en ajax qui permet de montrer qui est connecté.
+Il met à jour la page selon les joueurs connectés avec quelques effets javascript.
+
+Comment ça marche ?
+------------------------------------------------------------------------------------
+Il récupère les joueurs en ligne depuis la base de données toutes les 5 secondes et
+rafraîchit le contenu de la page.
+
+Installation
+------------------------------------------------------------------------------------
+Naviguez dans le dossier include et renommez le fichier config.php.example en
+config.php.
+Renseignez les informations dans le fichier config.php

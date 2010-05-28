@@ -1,10 +1,10 @@
 <?php
 	$config = array();
-	$config['db'] = array( 'host' => '127.0.0.1',
-												 'port' => '3306',
-												 'username' => 'root',
-												 'password' => 'apQTZ47!',
-												 'dbname' => 'acroserver' );
+	$config['db'] = array( 'host' => '',				# The address of the server where the mysql database is stored
+												 'port' => '',				# The port of the mysql server listens on
+												 'username' => '',		# A username for the connection
+												 'password' => '',		# The user's password
+												 'dbname' => '' );		# Name of the eathena database
 	
-	$config['per_page'] = 50;
+	$config['per_page'] = 50; 									# Pagination does not work !
 ?>
