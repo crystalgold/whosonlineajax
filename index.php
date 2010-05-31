@@ -14,6 +14,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 		<script type="text/javascript">
+		  var refreshTime = <?php echo $config['refresh_time'] ?>;
 			function getPlayersOnline()
 			{
 				$.ajax({
@@ -64,12 +65,14 @@
 			function makeCharDisappear(divId)
 			{
 				var oDiv = $('#char_' + divId);
-				oDiv.effect("pulsate", { times:3 }, 500);
+				oDiv.effect("pulsate", { times:3 }, 300);
 				oDiv.hide("drop", {direction:"down"}, 800, function(){ $(this).replaceWith("") });
 			}
 
 			$(document).ready(function(){
-				setInterval('getPlayersOnline();', 5000); 
+			  if (refreshTime < 5)
+			    refreshTime = 5;
+				setInterval('getPlayersOnline();', refreshTime * 1000); 
 			});
 			
 		</script>

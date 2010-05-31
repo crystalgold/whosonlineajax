@@ -6,5 +6,5 @@
 												 'password' => '',		# The user's password
 												 'dbname' => '' );		# Name of the eathena database
 	
-	$config['per_page'] = 50; 									# Pagination does not work !
+	$config['refresh_time'] = 10;               # In seconds
 ?>

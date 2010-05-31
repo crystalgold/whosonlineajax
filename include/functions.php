@@ -13,14 +13,19 @@
 			case 4078: return 5003; // Genetic
 			case 4062: return 5004; // Ranger
 			case 4065: return 5005; // Guillotine Cross
-			case 4073: return 5006; // Royal Guard
-			case 4077: return 5007; // Sura
-			case 4074: return 5008; // Sorcerer
-			case 4079: return 5009; // Shadow Chaser
+			
+			case 4073: return 5007; // Royal Guard
+			case 4077: return 5008; // Sura
+			case 4074: return 5009; // Sorcerer
+			case 4079: return 5010; // Shadow Chaser
 			case 4076: return 5010; // Wanderer ?
 			case 4075: return 5011; // Minstrel
 			case 4023: return 23; // Super novice
-			default: return $jobId;
+			
+			default: if ($jobId >= 4001 && $jobId < 4007)
+			          return $jobId - 4000;
+			         else
+			          return $jobId;
 		}
 	}
 	
@@ -48,11 +53,12 @@
 		$charsOnline = array();
 
 		while ($charData = $charsOnlineData->fetch( PDO::FETCH_OBJ ))
-			$charsOnline[] = $charData;
+		$charsOnline[] = $charData;
 		$result['count'] = sizeof($charsOnline);
 			
-		$result['players'] = array_slice($charsOnline, $index, $per_page);
-		
+		// $result['players'] = array_slice($charsOnline, $index, $per_page);
+		$result['players'] = $charsOnline;
+    
 		return $result;
 	}
 	
